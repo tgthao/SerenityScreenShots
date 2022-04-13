@@ -12,7 +12,7 @@ public class HomePage extends PageObject {
     public void enterUsername() {
 
         $("//*[@id=\"identifierId\"]").sendKeys("giangthaonexle@gmail.com");
-        Serenity.takeScreenshot();
+        //sSerenity.takeScreenshot();
 
     }
 

@@ -1,5 +1,6 @@
 package steps;
 
+import net.thucydides.core.annotations.Screenshots;
 import net.thucydides.core.annotations.Step;
 import pages.HomePage;
 
@@ -10,6 +11,7 @@ public class HomePageSteps {
 	HomePage home;
 	
 	@Step("Performing Login")
+	@Screenshots(onlyOnFailures = false)
 	public void doLogin() {
 		
 		
