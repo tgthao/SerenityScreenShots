@@ -27,7 +27,7 @@ public class LoginTest{
 	public void loginTest() {
 		
 		home.doLogin();
-		home.doEnterPassword();
+		//home.doEnterPassword();
 		
 	}
 

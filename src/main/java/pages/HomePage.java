@@ -11,7 +11,8 @@ public class HomePage extends PageObject {
 
     public void enterUsername() {
 
-        $("//*[@id=\"identifierId\"]").sendKeys("thaogiang.90@way2automation.com");
+        $("//*[@id=\"identifierId\"]").sendKeys("giangthaonexle@gmail.com");
+        Serenity.takeScreenshot();
 
     }
 
@@ -20,14 +21,14 @@ public class HomePage extends PageObject {
 
 
 
-        $("//*[@id=\"identifierNext\"]/span/span").click();
-        Serenity.takeScreenshot();
+        $("//*[@id=\"identifierNext\"]/div/button/span").click();
+        //Serenity.takeScreenshot();
     }
 
 
     public void enterPassword() {
 
-        $("//*[@id=\"password\"]/div[1]/div/div[1]/input").sendKeys("23sdfsfds");
+        $("//*[@id=\"password\"]/div[1]/div/div[1]/input").sendKeys("Giangthao789");
 
 
     }
