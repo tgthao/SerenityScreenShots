@@ -1,19 +1,16 @@
 package testcases;
 
+import net.serenitybdd.junit.runners.SerenityRunner;
+import net.thucydides.core.annotations.Managed;
+import net.thucydides.core.annotations.Steps;
+import net.thucydides.core.annotations.Title;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
-
-import net.serenitybdd.core.Serenity;
-import net.serenitybdd.junit.runners.SerenityRunner;
-import net.thucydides.core.annotations.Managed;
-import net.thucydides.core.annotations.Screenshots;
-import net.thucydides.core.annotations.Steps;
-import net.thucydides.core.annotations.Title;
 import steps.HomePageSteps;
 
 @RunWith(SerenityRunner.class)
-public class LoginTest{
+public class SecondTest {
 	
 	@Managed
 	WebDriver driver;
@@ -32,5 +29,15 @@ public class LoginTest{
 	}
 
 	
+	@Title("Executing Second Test")
+	@Test
+	//@Screenshots(afterEachStep=true)
+	public void secondTest() {
+		
+		home.doLogin();
+		home.doEnterPassword();
+		
+		
+	}
 
 }
